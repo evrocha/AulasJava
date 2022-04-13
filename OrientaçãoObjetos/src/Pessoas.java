@@ -8,8 +8,10 @@ public class Pessoas {
 		pessoa.nume_figu += nume_figu;
 
 	}
-
-	void dar(int nume_figu, Pessoas pessoa) {
+	
+	
+	boolean dar(int nume_figu, Pessoas pessoa) {
+		boolean msg;
 
 		if (nume_figu < pessoa.nume_figu) {
 
@@ -21,11 +23,12 @@ public class Pessoas {
 
 			System.out.println(pessoa.nome);
 			System.out.println(pessoa.nume_figu);
-
+			msg = true;
 		} else {
 
 			System.out.println("Você não essa quatidade de figurinhas.");
+			msg = false;
 		}
-
+		return msg;
 	}
 }
