@@ -5,7 +5,7 @@ public abstract class Item {
 	private int posy;
 	
 	public abstract void pegar();
-		
+	
 	
 
 	public int getPosx() {
