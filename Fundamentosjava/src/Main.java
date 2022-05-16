@@ -74,7 +74,7 @@ public class Main {
 //				System.out.println("valor inválido");
 //				
 //			}
-			
+
 //			String cor;
 //			
 //			System.out.println("Qual a cor do farol?");
@@ -94,7 +94,7 @@ public class Main {
 //			default:
 //				System.out.println("valor inválido");
 //		}
-		
+
 //		int x = 0;
 //		while(x<10) {//testar para depois executar
 //		System.out.println(x);
@@ -107,73 +107,97 @@ public class Main {
 //			System.out.println(x);
 //			x++;
 //		}while(x<10);
-		
-		
-		
-		
+
 //		for(int x=0; x>-10; x--) {
 //			System.out.println(x);
-		
-		System.out.println("Selecione 'T' para consultar tabuada.");
-		System.out.println("Selecione 'O' para fazer uma operação");
-		
-		
-		String lol = "";
-		lol = in.nextLine();
-		
-		if( (lol.equals("T"))) {
-			int t;
-			System.out.println("Qual tabuada deseja consultar?");
-			t = Integer.parseInt(in.nextLine());
-			for(int p=0; p<=10; p++) 
-				
-				System.out.println(t + "x" + p + " = " + p*t);
-			
-		}else if ( (lol.equals("O"))) {
-			
-			System.out.println("Qual dessas operações: (+, -, *, /) você deseja realizar?");
-			String op = "";
-			op = in.nextLine();
-			System.out.println("Escolha o primeiro valor");
-			int x;
-			x = Integer.parseInt(in.nextLine());
-			System.out.println();
-			System.out.println("Escolha o segundo valor");
-			int y;
-			y = Integer.parseInt(in.nextLine());
-			
-			switch (op) {
-			
 
-			case "+":
-				
-				System.out.println("Valor da sua conta é: " + (x+y));
-				break;
-				
-			case "-":
-				
-				System.out.println("Valor da sua conta é: " + (x-y));
-				break;
-				
-			case "/":
-		
-				System.out.println("Valor da sua conta é: " + (x/y));
-				break;
-		
-			case "*":
-		
-				System.out.println("Valor da sua conta é: " + (x*y));
-				break;
-			
-			default:
-				System.out.println("valor inválido");
+//		System.out.println("Selecione 'T' para consultar tabuada.");
+//		System.out.println("Selecione 'O' para fazer uma operação");
+//		
+//		
+//		String lol = "";
+//		lol = in.nextLine();
+//		
+//		if( (lol.equals("T"))) {
+//			int t;
+//			System.out.println("Qual tabuada deseja consultar?");
+//			t = Integer.parseInt(in.nextLine());
+//			for(int p=0; p<=10; p++) 
+//				
+//				System.out.println(t + "x" + p + " = " + p*t);
+//			
+//		}else if ( (lol.equals("O"))) {
+//			
+//			System.out.println("Qual dessas operações: (+, -, *, /) você deseja realizar?");
+//			String op = "";
+//			op = in.nextLine();
+//			System.out.println("Escolha o primeiro valor");
+//			int x;
+//			x = Integer.parseInt(in.nextLine());
+//			System.out.println();
+//			System.out.println("Escolha o segundo valor");
+//			int y;
+//			y = Integer.parseInt(in.nextLine());
+//			
+//			switch (op) {
+//			
+//
+//			case "+":
+//				
+//				System.out.println("Valor da sua conta é: " + (x+y));
+//				break;
+//				
+//			case "-":
+//				
+//				System.out.println("Valor da sua conta é: " + (x-y));
+//				break;
+//				
+//			case "/":
+//		
+//				System.out.println("Valor da sua conta é: " + (x/y));
+//				break;
+//		
+//			case "*":
+//		
+//				System.out.println("Valor da sua conta é: " + (x*y));
+//				break;
+//			
+//			default:
+//				System.out.println("valor inválido");
+//	}
+//}
+//			
+
+		double x[] = { 1, 3, 4, 6 };
+
+		for (int aux = 0; aux < x.length; aux++) {
+			System.out.println("Valor indice " + aux + " = " + x[aux]);
+		}
+		String nome[] = { "Marcus", "Luizin", "Manu", "Vitao" };
+
+		for (int aux1 = 0; aux1 < nome.length; aux1++) {
+			System.out.println(nome[aux1]);
+			if (nome[aux1] == "Marcus") {
+				System.out.println("Indice de Marcus eh: " + aux1);
+
 			}
-		
-			 
-		 }
+		}
+		int[] arrayInt = new int[5];
+		String[] ArrayString = new String[4];
+		double[] ArrayDouble = new double[3];
+
+		arrayInt[3] = 4;
+
+		int[] numero = new int[6];
+		Scanner teclado = new Scanner(System.in);
+
+		for (int aux2 = 0; aux2 < numero.length; aux2++) {
+			System.out.println("Digite um numero qualquer");
+			numero[aux2] = teclado.nextInt();
+		}
+		for  (int aux2 = 0; aux2 < numero.length; aux2++) {
+			System.out.println("Indice"+aux2+" = "+numero[aux2]);
+		}
 	}
+
 }
-
-	
-
-		
